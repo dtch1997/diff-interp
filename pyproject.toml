@@ -1,0 +1,26 @@
+[project]
+name = "diff-interp"
+version = "0.1.0"
+description = "Interpretability benchmark for diffusion models"
+authors = [
+    {name = "Daniel CH Tan", email = "dtch1997@users.noreply.github.com"},
+]
+dependencies = [
+    "torchvision>=0.18.0",
+    "gdown>=5.1.0",
+    "ipykernel>=6.29.4",
+    "pytorch-lightning>=2.2.3",
+    "transformers>=4.40.1",
+    "wandb>=0.16.6",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
